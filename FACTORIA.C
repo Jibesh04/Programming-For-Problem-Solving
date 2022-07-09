@@ -1,21 +1,18 @@
 // 1. Wrrite a Program using function to find factorial of a number.
 #include<stdio.h>
 #include<conio.h>
-long int fact(int);
+long int fact(unsigned int);
 int main()
 {
- int num;
+ unsigned int num;
  clrscr();
  printf("Enter the Number : ");
- scanf("%ld", &num);
- if(num >= 0)
-  printf("Factorial of %d is %ld", num, fact(num));
- else
-  printf("Invalid Input");
+ scanf("%u", &num);
+ printf("Factorial of %d is %ld", num, fact(num));
  getch();
  return 0;
 }
-long int fact(int n)
+long int fact(unsigned int n)
 {
  if(n == 0 || n == 1)
   return 1;

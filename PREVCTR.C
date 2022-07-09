@@ -11,7 +11,7 @@ int main()
  clrscr();
  printf("Enter the two numbers : ");
  scanf("%d %d", &p, &q);
- printf("Couunt of Prime numbers : %d", primectr(p, q));
+ printf("Count of Prime numbers : %d", primectr(p, q));
  printf("\nCount of Even numbers : %d", evenctr(p, q));
  getch();
  return 0;
@@ -24,7 +24,7 @@ int isPrime(int n)
   if(n%i == 0)
    ctr++;
  }
- if(ctr == 1)
+ if(ctr == 1 && n != 1);
   return 1;
  return 0;
 }

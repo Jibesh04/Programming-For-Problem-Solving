@@ -1,4 +1,4 @@
-// 1. Wrrite a Program using function to find factorial of a number.
+// 1. Write a Program using function to find factorial of a number.
 #include<stdio.h>
 #include<conio.h>
 long int fact(int);
